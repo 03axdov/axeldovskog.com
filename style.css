@@ -21,29 +21,23 @@ body {
     height:100vh;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header-1 {
-    width: 55%;
+    width: 45%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-left: 10%;
-    padding-top: 25px;
+    padding-left: 120px;
+    padding-top: 100px;
     padding-bottom: 25px;
 }
 
 .title-container {
-    padding: 20px 50px;
+    padding: 20px 20px;
     height: 100%;
-    width: 85%;
-}
-
-.header-2 {
-    width: 50%;
-    display: flex;
-    justify-content: center;
+    width: 650px;
 }
 
 .title {
@@ -134,12 +128,112 @@ body {
     width: 160px;
 }
 
-.experience-time {
-    margin-right: 50px;
-    margin-left: auto;
+
+
+.header-2 {
+    width: 55%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.about-me-header {
+    height: 100vh;
+    background: rgb(10,10,10);
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-top: 1px solid white;
+    border-image: linear-gradient(to right, rgba(233,177,255,1), rgba(118,146,255,1)) 1;
+}
+
+.about-me-title {
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1)) 1
+}
+
+.about-me-image {
+    width: 550px;
+
+    border-radius: 30px;
+
+    object-fit: cover;
+}
+
+
+.ai-image {
+    position: relative;
+    border: 3px solid rgba(118,146,255,1);
+    height: 350px;
+    transition: 0.3s;
+}
+
+.ai-image:hover {
+    width: 570px;
+    height: 370px;
+    z-index: 3;
+    transition: 0.3s;
+}
+
+.fantasy-image {
+    position: absolute;
+    top: 32%;
+    right: 75px;
+    height: 380px;
+    z-index: 2;
+    border: 3px solid rgba(156,157,143,1);
+    transition: 0.3s;
+}
+
+.fantasy-image:hover {
+    width: 570px;
+    height: 400px;
+    transition: 0.3s;
+}
+
+.stock-image {
+    position: absolute;
+    top: 55%;
+    right: 200px;
+    border: 3px solid rgb(47, 88, 255);
+    height: 350px;
+    transition: 0.3s;
+}
+
+.stock-image:hover {
+    width: 570px;
+    height: 370px;
+    z-index: 3;
+    transition: 0.3s;
 }
 
 .projects-header {
     height: 100vh;
     background: rgb(10,10,10);
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.asoif {
+    color: #16e5f5;
+    display: inline-block;
+    width: 250px;
+}
+
+.tsa {
+    color: rgba(118,146,255,1);
+    display: inline-block;
+    width: 250px;
+}
+
+.mistborn {
+    color: #b4b4b4;
+    display: inline-block;
+    width: 250px;
 }
