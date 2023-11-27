@@ -10,9 +10,8 @@
 }
 
 body {
-    background: rgb(32, 32, 32);
     color: #fff;
-    background: url("images/Background.webp") no-repeat;
+    background: linear-gradient( 180deg, rgba(10, 10, 10, 0), rgba(10, 10, 10, 1) ), url("images/background.jpg") no-repeat;
     background-size: 100%;
     background-attachment: fixed;
 }
@@ -22,25 +21,29 @@ body {
     height:100vh;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .header-1 {
-
-    width: 50%;
+    width: 55%;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-left: 10%;
-    padding-top: 100px;
-    background: rgb(5,5,5);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.title-container {
+    padding: 20px 50px;
+    height: 100%;
+    width: 85%;
 }
 
 .header-2 {
     width: 50%;
     display: flex;
     justify-content: center;
-    background: url("images/Header2Background.png");
 }
 
 .title {
@@ -52,18 +55,18 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-image: linear-gradient(to right, rgba(233,177,255,1), rgba(118,146,255,1)) 1;
     margin-bottom: 20px;
     margin-left: 0;
     margin-right: auto;
     width: 100%;
 }
 
+
 .colored-text-title {
-    background: rgb(0,255,248);
-    background: linear-gradient(90deg, rgba(0,255,248,1) 0%, rgba(0,164,255,1) 100%);
+    background: rgb(233,177,255);
+    background: linear-gradient(90deg, rgba(233,177,255,1) 0%, rgba(118,146,255,1) 100%);
     background-repeat: no-repeat;
     background-size: 100%;
     -webkit-background-clip: text;
@@ -74,17 +77,69 @@ body {
 .title-description {
     font-size: 1.2rem;
     text-align: justify;
+    width: 100%;
 }
 
 .color-1{
-    color: rgb(0,255,248);
+    color: rgb(233,177,255);
 }
 
 .color-2 {
-    color: rgba(0,164,255,1);
+    color: rgba(174,161,255,1);
+}
+
+.color-3 {
+    color: rgb(118, 146, 255);
+}
+
+.python {
+    color: #e9b1ff;
+    display: inline-block;
+    width: 160px;
+}
+
+.javascript {
+    color: #ceaaff;
+    display: inline-block;
+    width: 160px;
+}
+
+.java {
+    color: #aea1ff;
+    display: inline-block;
+    width: 160px;
+}
+
+.scala {
+    color: #9199ff;
+    display: inline-block;
+    width: 160px;
+}
+
+.typescript {
+    color: #7692ff;
+    display: inline-block;
+    width: 160px;
+}
+
+.html {
+    color: #6997ff;
+    display: inline-block;
+    width: 160px;
+}
+
+.vhdl {
+    color: #2076ff;
+    display: inline-block;
+    width: 160px;
+}
+
+.experience-time {
+    margin-right: 50px;
+    margin-left: auto;
 }
 
 .projects-header {
     height: 100vh;
-    background: rgb(5,5,5);
+    background: rgb(10,10,10);
 }
