@@ -10,54 +10,58 @@
 }
 
 body {
-    background: rgb(5,5,5);
+    background: rgb(32, 32, 32);
     color: #fff;
-    
+    background: url("images/Background.webp") no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 #header{
     width:100%;
     height:100vh;
     position: relative;
-    padding: 5%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header-1 {
 
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
-    border-radius: 10px;
-    height: 100px;
     flex-direction: column;
+    padding-left: 10%;
+    padding-top: 100px;
+    background: rgb(5,5,5);
 }
 
 .header-2 {
     width: 50%;
     display: flex;
     justify-content: center;
-    border-radius: 10px;
-    background: rgb(12,12,12);
+    background: url("images/Header2Background.png");
 }
 
 .title {
     font-size: 3rem;
-    background: rgb(200,200,200);
+    background: rgb(255, 255, 255);
     background-repeat: no-repeat;
     background-size: 100%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-bottom: 1px solid rgb(70,70,70);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid rgb(255, 255, 255);
     margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: auto;
+    width: 100%;
 }
 
-.colored-text {
+.colored-text-title {
     background: rgb(0,255,248);
     background: linear-gradient(90deg, rgba(0,255,248,1) 0%, rgba(0,164,255,1) 100%);
     background-repeat: no-repeat;
@@ -65,10 +69,6 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.title-description-container {
-    padding: 0 50px;
 }
 
 .title-description {
@@ -82,4 +82,9 @@ body {
 
 .color-2 {
     color: rgba(0,164,255,1);
+}
+
+.projects-header {
+    height: 100vh;
+    background: rgb(5,5,5);
 }
