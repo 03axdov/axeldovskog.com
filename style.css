@@ -3,7 +3,7 @@
     padding: 0;
     font-family: "Open Sans";
     box-sizing: border-box;
-
+    font-weight: 500;
     line-height: 1.7;
     letter-spacing: 0px;
     word-spacing: 0px;
@@ -11,7 +11,7 @@
 
 body {
     color: #fff;
-    background: linear-gradient( 180deg, rgba(10, 10, 10, 0), rgba(10, 10, 10, 1) ), url("images/background.jpg") no-repeat;
+    background: linear-gradient( 180deg, rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 1) ), url("images/background.jpg") no-repeat;
     background-size: 100%;
     background-attachment: fixed;
 }
@@ -27,21 +27,36 @@ body {
 .header-1 {
     width: 45%;
     display: flex;
-    align-items: center;
+    align-items: space-between;
+    justify-content: center;
     flex-direction: column;
-    padding-left: 120px;
-    padding-top: 100px;
-    padding-bottom: 25px;
+    padding-right: 150px;
+
+}
+
+.ad-1 {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 300px;
+    transform: rotate(90deg);
+    border: 3px solid rgba(233,177,255,1);
+}
+
+.title-header-2 {
+    justify-content: center!important;
+    padding-bottom: 100px!important;
 }
 
 .title-container {
-    padding: 20px 20px;
-    height: 100%;
+    height: auto;
     width: 650px;
+    padding-bottom: 100px;
+
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     background: rgb(255, 255, 255);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -60,7 +75,7 @@ body {
 
 .colored-text-title {
     background: rgb(233,177,255);
-    background: linear-gradient(90deg, rgba(233,177,255,1) 0%, rgba(118,146,255,1) 100%);
+    background: linear-gradient(to right, rgba(233,177,255,1), rgba(118,146,255,1));
     background-repeat: no-repeat;
     background-size: 100%;
     -webkit-background-clip: text;
@@ -149,12 +164,19 @@ body {
     flex-direction: row;
     border-top: 1px solid white;
     border-image: linear-gradient(to right, rgba(233,177,255,1), rgba(118,146,255,1)) 1;
+
 }
 
 .about-me-title {
     padding-top: 20px;
     border-bottom: 1px solid rgb(255, 255, 255);
     border-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1)) 1
+}
+
+.subheader-container {
+    padding-top: 30px;
+    padding-left: 120px;
+    padding-right: 0;
 }
 
 .about-me-image {
@@ -196,28 +218,20 @@ body {
     transition: 0.3s;
 }
 
-.stock-image {
+.landscape-image {
     position: absolute;
     top: 55%;
     right: 200px;
-    border: 3px solid rgb(47, 88, 255);
+    border: 3px solid #e8fdf0;
     height: 350px;
     transition: 0.3s;
 }
 
-.stock-image:hover {
+.landscape-image:hover {
     width: 570px;
     height: 370px;
     z-index: 3;
     transition: 0.3s;
-}
-
-.projects-header {
-    height: 100vh;
-    background: rgb(10,10,10);
-    display:flex;
-    justify-content: space-between;
-    flex-direction: row;
 }
 
 .asoif {
@@ -236,4 +250,68 @@ body {
     color: #b4b4b4;
     display: inline-block;
     width: 250px;
+}
+
+.about-me-background {
+    background: rgb(25,25,25);
+    background: linear-gradient(180deg, rgba(25,25,25,1) 0%, rgba(10,10,10,1) 100%);
+}
+
+
+.programming-header {
+    height: 100vh;
+    background: rgb(10,10,10);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 120px;
+    padding-top: 50px;
+
+}
+
+.programming-title {
+    border-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1)) 1;
+    margin: 0;
+    width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.programming-title-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.programming-description {
+    margin-top: 30px;
+    width: 500px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.programming-logos {
+    height: 350px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo-image {
+    height: 220px;
+    width: 220px;
+    padding: 30px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.logo-image:hover {
+    background: rgb(40,40,40);
+    transition: 0s;
 }
