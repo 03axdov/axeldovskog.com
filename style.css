@@ -92,7 +92,7 @@ body {
     object-fit: cover;
     border-radius: 250px;
     transform: rotate(90deg);
-    filter: grayscale(1);
+
     box-shadow: 0 0 100px rgb(70, 70, 70);
 }
 
@@ -219,8 +219,6 @@ body {
 
 .about-me-title {
     padding-top: 20px;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    border-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1)) 1
 }
 
 .subheader-container {
@@ -308,14 +306,12 @@ body {
 
 .about-me-background {
     background: rgb(20,20,20);
-    background: linear-gradient(180deg, rgba(20,20,20,1) 0%, rgba(10,10,10,1) 100%);
 }
 
 
 .programming-header {
     height: auto;
-    background: rgb(10,10,10);
-    background: linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(15,15,15,1) 100%);
+    background: rgb(20,20,20);
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -326,7 +322,6 @@ body {
 }
 
 .programming-title {
-    border-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1)) 1;
     margin: 0;
     width: 500px;
     padding-left: 20px;
@@ -383,7 +378,7 @@ body {
     position: absolute;
     height: 95px;
     top: -100px;
-    background: rgb(35, 35, 35);
+    background: rgb(40, 40, 40);
     border-radius: 10px;
 
 }
@@ -407,12 +402,12 @@ body {
     border-radius: 10px;
     object-fit: cover;
     transition: 0.3s;
-    background: rgb(20,20,20);
+    background: rgb(30,30,30);
 }
 
 .logo-image:hover {
     padding: 20px;
-    background: rgb(35,35,35);
+    background: rgb(40,40,40);
     transition: 0.3s;
 }
 
@@ -506,12 +501,64 @@ body {
 }
 
 .projects-header {
-    height: 100vh;
-    background: rgb(15,15,15);
-    background: linear-gradient(180deg, rgba(15,15,15,1) 0%, rgba(5,5,5,1) 100%);
+    height: auto;
+    background: rgb(10,10,10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+.projects-intro-header {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
 }
 
 .contact-header {
     height: 50vh;
     background: rgb(5,5,5);
+}
+
+.programming-header-2 {
+    padding: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+}
+
+.projects-image {
+    width: 24%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+
+.programming-1 {
+    
+    border: 2px solid #24F2FF;
+    margin-bottom: 10%;
+}
+.programming-2 {
+    border: 2px solid #FB9515;
+    margin-bottom: 3%;
+}
+.programming-3 {
+    border: 2px solid #D7373D;
+    margin-top: 3%;
+}
+.programming-4 {
+    border: 2px solid #92605F;
+    margin-top: 10%;
+}
+
+.github-link {
+    text-decoration: none;
 }
