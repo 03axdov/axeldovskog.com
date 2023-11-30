@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    Font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+    Font-family: Verdana, Geneva, sans-serif;
     box-sizing: border-box;
     font-weight: 500;
     line-height: 1.7;
@@ -40,7 +40,7 @@ body {
 #header{
     width:100%;
     height:100vh;
-    position: relative;
+    position: sticky;
     display: flex;
     justify-content: space-between;
 }
@@ -91,7 +91,6 @@ body {
     height: 500px;
     object-fit: cover;
     border-radius: 250px;
-    transform: rotate(90deg);
 
     box-shadow: 0 0 100px rgb(70, 70, 70);
 }
@@ -105,7 +104,10 @@ body {
     height: auto;
     width: 100%;
     padding-bottom: 100px;
+}
 
+.project-title-container {
+    padding: 0;
 }
 
 .title {
@@ -123,12 +125,9 @@ body {
     margin-left: 0;
     margin-right: auto;
     width: 100%;
-    font-weight: 600!important;
-    font-family: "Open Sans"!important;
 }
 
 .title a {
-    font-family: "Open Sans"!important;
     font-weight: 600!important;
 }
 
@@ -217,7 +216,7 @@ body {
 
 
 .about-me-header {
-    height: 100vh;
+    min-height: 100vh;
     display:flex;
     justify-content: space-between;
     flex-direction: row;
@@ -318,7 +317,7 @@ body {
 
 .programming-header {
     height: auto;
-    background: rgb(20,20,20);
+    background: rgb(15,15,15);
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -421,39 +420,39 @@ body {
 }
 
 .python-title {
-    color: rgb(55, 120, 174);
+    color: white;
 }
 
 .javascript-title {
-    color: rgb(240, 219, 79);
+    color: white;
 }
 
 .java-title {
-    color: rgb(228, 57, 47);
+    color: white;
 }
 
 .scala-title {
-    color: rgb(255, 49, 28);
+    color: white;
 }
 
 .html-title {
-    color: #E34F26;
+    color: white;
 }
 
 .css-title {
-    color: #264DE4;
+    color: white;
 }
 
 .tensorflow-title {
-    color: #EB8C23;
+    color: white;
 }
 
 .django-title {
-    color: #0e4d34;
+    color: white;
 }
 
 .react-title {
-    color: #5BAEF1;
+    color: white;
 }
 
 .python-logo:hover + .hide-python {
@@ -532,10 +531,6 @@ body {
     justify-content: center;
 }
 
-.contact-header {
-    height: 50vh;
-    background: rgb(5,5,5);
-}
 
 .programming-header-2 {
     padding: 0;
@@ -557,19 +552,19 @@ body {
 
 .programming-1 {
     
-    border: 2px solid #24F2FF;
+    border: 2px solid #e9b1ff;
     margin-bottom: 10%;
 }
 .programming-2 {
-    border: 2px solid #FB9515;
+    border: 2px solid #ceaaff;
     margin-bottom: 3%;
 }
 .programming-3 {
-    border: 2px solid #D7373D;
+    border: 2px solid #aea1ff;
     margin-top: 3%;
 }
 .programming-4 {
-    border: 2px solid #92605F;
+    border: 2px solid #9199ff;
     margin-top: 10%;
 }
 
@@ -579,7 +574,7 @@ body {
 
 .project-header {
     margin-top: 100px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -654,7 +649,7 @@ body {
 
 .mr-logo {
     width: 300px;
-    max-width: 25vw;
+    max-width: 20vw;
     z-index: 1;
     border: 2px solid rgb(119,0,255);
     transition: 0.3s;
@@ -663,7 +658,7 @@ body {
 .mr-logo:hover {
     transition: 0.3s;
     width: 330px;
-    max-width: 28vw;
+    max-width: 22vw;
 }
 
 .mr-img-1 {
@@ -680,7 +675,7 @@ body {
 .mr-img-1:hover {
     transition: 0.3s;
     width: 600px;
-    max-width: 40vw;
+    max-width: 32vw;
     z-index: 2;
 }
 
@@ -688,6 +683,7 @@ body {
     width: 600px;
     position: absolute;
     top: 55%;
+    max-width: 30vw;
     right: 200px;
     border: 2px solid #b900b1;
     transition: 0.3s;
@@ -696,7 +692,7 @@ body {
 .mr-img-2:hover {
     transition: 0.3s;
     width: 625px;
-    max-width: 40vw;
+    max-width: 32vw;
     z-index: 2;
 }
 
@@ -714,7 +710,7 @@ body {
 
 .mk-img-1 {
     width: 700px;
-    max-width: 40vw;
+    max-width: 35vw;
     border: 2px solid #017AA8;
     transition: 0.3s;
     object-fit: contain;
@@ -723,14 +719,15 @@ body {
 .mk-img-1:hover {
     transition: 0.3s;
     width: 725px;
-    max-width: 43vw;
+    max-width: 37vw;
     z-index: 2;
 }
 
 .mk-img-2 {
     width: 500px;
     position: absolute;
-    top: 55%;
+    top: 550px;
+    max-width: 35vw;
     right: 75px;
     border: 2px solid #1ae3f1;
     transition: 0.3s;
@@ -740,13 +737,14 @@ body {
     transition: 0.3s;
     width: 525px;
     z-index: 2;
+    max-width: 37vw;
 }
 
 .mk-logo {
     width: 850px;
     max-width: 40vw;
     position: absolute;
-    top: 30%;
+    top: 300px;
     left: 65px;
 
     transition: 0.3s;
@@ -784,4 +782,22 @@ body {
 
 .mk-3 {
     color: #01c2e8;
+}
+
+.contact-header {
+    height: 200px;
+    background: rgb(5,5,5);
+    padding: 0 5%;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon {
+    height: 75px;
+    width: 75px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
