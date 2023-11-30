@@ -117,17 +117,19 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-bottom: 10px;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
     border-image: linear-gradient(to right, rgba(233,177,255,1), rgba(118,146,255,1)) 1;
     margin-bottom: 20px;
     margin-left: 0;
     margin-right: auto;
     width: 100%;
+    font-weight: 600!important;
     font-family: "Open Sans"!important;
 }
 
 .title a {
     font-family: "Open Sans"!important;
+    font-weight: 600!important;
 }
 
 
@@ -322,8 +324,9 @@ body {
     align-items: center;
     padding: 0 120px;
     padding-top: 50px;
-    position: relative;
+
     padding-bottom: 125px;
+    
 }
 
 .programming-title {
@@ -358,6 +361,7 @@ body {
     width: 700px;
     max-width: 50vw;
     flex-wrap: wrap;
+    
 }
 
 .programming-section {
@@ -513,6 +517,8 @@ body {
     justify-content: center;
     padding: 0;
     padding-top: 120px;
+    position: relative;
+    z-index: 3;
 }
 
 
@@ -572,14 +578,14 @@ body {
 }
 
 .project-header {
-    margin-top: 150px;
+    margin-top: 100px;
     height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.project-header-1 {
+.mr-header-1 {
     width: 50%;
     padding-left: 120px;
     padding-right: 50px;
@@ -643,11 +649,10 @@ body {
 .mr-image {
 
     border-radius: 20px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .mr-logo {
-    height: 300px;
     width: 300px;
     max-width: 25vw;
     z-index: 1;
@@ -658,17 +663,15 @@ body {
 .mr-logo:hover {
     transition: 0.3s;
     width: 330px;
-    height: 330px;
     max-width: 28vw;
 }
 
 .mr-img-1 {
-    width: 550px;
+    width: 575px;
     max-width: 30vw;
     position: absolute;
     top: 30%;
     right: 75px;
-    height: 350px;
     transition: 0.3s;
     border: 2px solid #00d6e5;
     transition: 0.3s;
@@ -676,26 +679,109 @@ body {
 
 .mr-img-1:hover {
     transition: 0.3s;
-    width: 580px;
-    height: 380px;
-    max-width: 32vw;
+    width: 600px;
+    max-width: 40vw;
     z-index: 2;
 }
 
 .mr-img-2 {
-    width: 550px;
+    width: 600px;
     position: absolute;
     top: 55%;
     right: 200px;
-    height: 370px;
     border: 2px solid #b900b1;
     transition: 0.3s;
 }
 
 .mr-img-2:hover {
     transition: 0.3s;
-    width: 590px;
-    height: 400px;
-    max-width: 32vw;
+    width: 625px;
+    max-width: 40vw;
     z-index: 2;
+}
+
+.mk-header-1 {
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 400px;
+}
+
+.mk-header-2 {
+    width: 50%;
+    padding-left: 120px;
+    padding-right: 50px;
+}
+
+.mk-img-1 {
+    width: 700px;
+    max-width: 40vw;
+    border: 2px solid #017AA8;
+    transition: 0.3s;
+    object-fit: contain;
+}
+
+.mk-img-1:hover {
+    transition: 0.3s;
+    width: 725px;
+    max-width: 43vw;
+    z-index: 2;
+}
+
+.mk-img-2 {
+    width: 500px;
+    position: absolute;
+    top: 55%;
+    right: 75px;
+    border: 2px solid #1ae3f1;
+    transition: 0.3s;
+}
+
+.mk-img-2:hover {
+    transition: 0.3s;
+    width: 525px;
+    z-index: 2;
+}
+
+.mk-logo {
+    width: 850px;
+    max-width: 40vw;
+    position: absolute;
+    top: 30%;
+    left: 65px;
+
+    transition: 0.3s;
+    border: 2px solid #00d6e5;
+    transition: 0.3s;
+    z-index: 1;
+    object-fit: contain;
+}
+
+.mk-logo:hover {
+    transition: 0.3s;
+    width: 875px;
+    max-width: 43vw;
+    z-index: 2;
+}
+
+.muskie-title {
+    background: rgb(0,250,215);
+    background: linear-gradient(90deg, rgba(0,250,215,1) 0%, rgba(1,137,249,1) 100%);
+    border-image: linear-gradient(90deg, rgba(0,250,215,1) 0%, rgba(1,137,249,1) 100%) 1;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mk-1 {
+    color: rgb(0,250,215);
+}
+
+.mk-2 {
+    color: rgba(1,137,249,1)
+}
+
+.mk-3 {
+    color: #01c2e8;
 }
