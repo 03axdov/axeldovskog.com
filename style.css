@@ -133,8 +133,8 @@ body {
 
 
 .colored-text-title {
-    background: rgb(233,177,255);
-    background: linear-gradient(to right, rgba(233,177,255,1), rgba(118,146,255,1));
+    background: rgba(0,212,255,1);
+
     background-repeat: no-repeat;
     background-size: 100%;
     -webkit-background-clip: text;
@@ -649,7 +649,7 @@ body {
 
 .mr-logo {
     width: 300px;
-    max-width: 20vw;
+    max-width: 17vw;
     z-index: 1;
     border: 2px solid rgb(119,0,255);
     transition: 0.3s;
@@ -658,7 +658,7 @@ body {
 .mr-logo:hover {
     transition: 0.3s;
     width: 330px;
-    max-width: 22vw;
+    max-width: 19vw;
 }
 
 .mr-img-1 {
