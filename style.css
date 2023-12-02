@@ -133,7 +133,7 @@ body {
 
 
 .colored-text-title {
-    background: rgba(0,212,255,1);
+    background: rgba(255,255,255,1);
 
     background-repeat: no-repeat;
     background-size: 100%;
@@ -323,7 +323,6 @@ body {
 }
 
 .programming-title {
-    background: rgb(174, 0, 255);
 
     background-repeat: no-repeat;
     background-size: 100%;
@@ -1099,9 +1098,10 @@ body {
 
     .mr-image {
         height: 47%;
+        min-height: 0;
         max-height: 47%;
         width: auto;
-        min-width: none;
+        max-width: 95%;
     }
 
     .mr-image:hover {
@@ -1143,5 +1143,70 @@ body {
 
     .programming-description {
         max-width: 90vw;
+    }
+
+    .title-header-2 {
+        padding: 0!important;
+    }
+
+    .ad-1 {
+        max-height: 100%;
+        width: auto;
+    }
+
+    .nav-elements {
+        padding: 0 20px;
+    }
+
+    .navbar {
+        height: 50px;
+    }
+
+    .nav-element {
+        font-size: 1rem;
+    }
+
+    #projects {
+        padding-top: 50px;
+    }
+}
+
+@media all and (max-width: 440px) {
+    
+    .mr-header-2 {
+        height: 500px;
+    }
+    .title-description {
+        font-size: 0.9rem;
+    }
+
+    .asoif, .tsa, .mistborn {
+        width: 175px;
+    }
+
+    .contact-icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .language-description {
+        font-size: 0.9rem;
+    }
+
+    .language-description-title {
+        font-size: 1rem;
+    }
+
+    .programming-logos {
+        width: 95%;
+        max-width: 95%;
+    }
+
+    .logo-image {
+        padding: 10px;
+    }
+
+    .logo-image:hover {
+        padding: 15px;
     }
 }
