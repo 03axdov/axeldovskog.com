@@ -53,12 +53,13 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
+    padding: 0 50px;
+    z-index: 3;
 }
 
 .nav-elements {
-    width: 45%;
-    padding-right: 150px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -238,7 +239,7 @@ body {
     max-width: 30vw;
     height: auto;
     border-radius: 30px;
-
+    box-shadow: 0 0 50px rgb(70,70,70);
     object-fit: cover;
 }
 
@@ -275,7 +276,7 @@ body {
     position: absolute;
     top: 55%;
     right: 200px;
-    border: 2px solid #0166be;
+    border: 2px solid #be9201;
     transition: 0.3s;
 }
 
@@ -361,7 +362,6 @@ body {
     width: 700px;
     max-width: 50vw;
     flex-wrap: wrap;
-    
 }
 
 .programming-section {
@@ -386,15 +386,17 @@ body {
     display: none;
     position: absolute;
     height: 95px;
-    top: -100px;
-    background: rgb(40, 40, 40);
-    border-radius: 10px;
-
+    top: -95px;
+    background: rgb(30, 30, 30);
+    border-radius: 10px 10px 0 0;
+    border-right: 1px solid rgb(255,255,255);
+    border-left: 1px solid rgb(255,255,255);
+    border-top: 1px solid rgb(255,255,255);
 }
 
 .framework-description {
     height: 125px;
-    top: -130px;
+    top: -125px;
 }
 
 .language-description-title {
@@ -416,8 +418,12 @@ body {
 
 .logo-image:hover {
     padding: 20px;
-    background: rgb(40,40,40);
-    transition: 0.3s;
+
+    border-right: 1px solid rgb(255,255,255);
+    border-left: 1px solid rgb(255,255,255);
+    border-bottom: 1px solid rgb(255,255,255);
+    border-radius: 0 0 10px 10px;
+    transition: 0s;
 }
 
 .python-title {
@@ -522,6 +528,46 @@ body {
 }
 
 
+#education {
+    margin-top: 0!important;
+}
+
+.education-1 {
+    color: rgb(0,250,215);
+}
+
+.education-header-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.education-header-1 {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.education-img {
+    width: 850px;
+    max-width: 95%;
+    position: absolute;
+
+    border-radius: 20px;
+    object-fit: contain;
+    transition: 0.3s;
+    border: 2px solid #ffffff;
+    transition: 0.3s;
+    z-index: 1;
+    box-shadow: 0 0 100px rgb(70,70,70);
+}
+
+.education-img:hover {
+    transition: 0.3s;
+    width: 875px;
+    max-width: 97%;
+    z-index: 2;
+}
 
 .projects-intro-header {
     height: 70vh;
@@ -548,6 +594,7 @@ body {
     object-fit: cover;
     border-radius: 10px;
     transition: 0.3s;
+    box-shadow: 0 0 50px rgb(70,70,70);
 }
 
 
@@ -644,7 +691,7 @@ body {
 }
 
 .mr-image {
-
+    box-shadow: 0 0 50px rgb(70,70,70);
     border-radius: 20px;
     object-fit: contain;
 }
@@ -846,7 +893,17 @@ body {
         padding-left: 0;
     }
 
+    .education-header-1 {
+        padding-right: 50px;
+        padding-left: 0;
+    }
+
     .projects-header-1 {
+        padding-left: 0;
+        padding-right: 50px;
+    }
+
+    .education-header-1 {
         padding-left: 0;
         padding-right: 50px;
     }
@@ -939,6 +996,11 @@ body {
         width: 55%;
     }
 
+    .education-header-1 {
+        padding-bottom: 100px;
+        width: 55%;
+    }
+
     .mk-header-2 {
         padding: 50px 0;
         display: flex;
@@ -946,6 +1008,14 @@ body {
         align-items: center;
         justify-content: center;
         width: 40%;
+    }
+
+    .education-header-2 {
+        width: 50%;
+    }
+
+    .education-header-1 {
+        width: 45%;
     }
 
     .logo-image {
@@ -1032,6 +1102,11 @@ body {
     }
 
     .projects-header-1 {
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .education-header-1 {
         padding: 0;
         padding-bottom: 20px;
     }
@@ -1168,6 +1243,12 @@ body {
 
     #projects {
         padding-top: 50px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .navbar {
+        display: none;
     }
 }
 
