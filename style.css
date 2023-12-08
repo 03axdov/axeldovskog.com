@@ -286,24 +286,55 @@ body {
 
 .artists-header-2 {
     height: auto;
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding-bottom: 0;
     margin-top: 50px;
+    gap: 100px;
 }
 
 .artist-container {
     width: 300px;
-    max-width: 32%;
+    min-width: 300PX;
     height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
 }
+
+
+.scroller {
+    width: 70%;
+    max-width: 70%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+
+    -webkit-mask: 
+        linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+
+}
+
+
+.scroller-inner {
+    width: max-content;
+    display: flex;
+    padding-block: 1rem;
+    flex-wrap: nowrap;
+    animation: scroll 50s linear infinite;
+}
+
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 50px));
+    }
+}
+
 
 .artist-name-container {
     display: flex;
@@ -400,7 +431,6 @@ body {
     z-index: 3;
     transition: 0.3s;
 }
-
 
 .asoif {
     color: #16e5f5;
@@ -1167,18 +1197,20 @@ body {
         padding-bottom: 0!important;
     }
 
-    .artists-header-2 {
-        width: 95%;
-    }
-
     .title-container {
         padding-bottom: 50px;
         margin-top: 50px;
     }
 
+    .scroller {
+        width: 95%;
+        max-width: 95%;
+    }
+
     .asoif {
         width: 200px;
     }
+
     
     .tsa {
         width: 200px;
