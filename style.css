@@ -93,12 +93,11 @@ body {
     height: 400px;
     object-fit: cover;
     border-radius: 250px;
-    border: 2px solid white;
-    box-shadow: 0 0 100px rgb(70, 70, 70);
+    box-shadow: 0 0 50px rgb(70, 70, 70);
 }
 
 .main-title {
-    font-size-adjust: 0.5;
+    font-size: 2.7rem!important;
 }
 
 .title-header-2 {
@@ -126,7 +125,7 @@ body {
     -webkit-text-fill-color: transparent;
     padding-bottom: 10px;
     border-bottom: 3px solid rgb(255, 255, 255);
-    border-image: linear-gradient(to right, rgba(233,177,255,1), rgba(118,146,255,1)) 1;
+
     margin-bottom: 20px;
     margin-left: 0;
     margin-right: auto;
@@ -139,14 +138,51 @@ body {
 
 
 .colored-text-title {
-    background: rgba(255,255,255,1);
-
-    background-repeat: no-repeat;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    animation: 
+        typing 4s steps(20, end),
+        blink-caret .75s step-end infinite;
 }
+
+@keyframes typing {
+    7%, 97% { content: ""; }
+    8%, 96% { content: "A"; }
+    9%, 95% { content: "Ax"; }
+    10%, 94% { content: "Axe"; }
+    11%, 93% { content: "Axel"; }
+    12%, 92% { content: "Axel D"; }
+    13%, 91% { content: "Axel Do"; }
+    14%, 90% { content: "Axel Dov"; }
+    15%, 89% { content: "Axel Dovs"; }
+    16%, 88% { content: "Axel Dovsk"; }
+    17%, 87% { content: "Axel Dovsko"; }
+    18%, 86% { content: "Axel Dovskog"; }
+
+}
+
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+.typewriter {
+    --caret: currentcolor;
+}
+  
+.typewriter::before {
+    content: "";
+    animation: typing 25s infinite;
+}
+  
+.typewriter::after {
+    content: "";
+    border-right: 1ch solid var(--caret);;
+    animation: blink 1s linear infinite;
+}
+  
+  
 
 .title-description {
     font-size: 1.2rem;
@@ -610,6 +646,7 @@ body {
 #education {
     margin-top: 0!important;
     min-height: 0!important;
+    padding: 0!important;
     padding-top: 75px;
     padding-bottom: 75px;
     min-height: 100vh!important;
@@ -628,6 +665,7 @@ body {
 
 .education-header-1 {
     padding-top: 0!important;
+    padding-right: 50px!important;
     padding-bottom: 25px!important;
 }
 
@@ -942,7 +980,13 @@ body {
     margin-right: 10px;
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1300px) {
+    .main-title {
+        font-size: 2.3rem!important;
+    }
+}
+
+@media all and (max-width: 1220px) {
 
     .nav-elements {
         padding-right: 50px;
@@ -958,6 +1002,8 @@ body {
     .title {
         font-size: 2.5rem;
     }
+
+
 
     .title-description, .programming-description {
         font-size: 1rem;
