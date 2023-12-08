@@ -53,12 +53,13 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
+    padding: 0 50px;
+    z-index: 3;
 }
 
 .nav-elements {
-    width: 45%;
-    padding-right: 150px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -86,9 +87,9 @@ body {
 
 }
 
-.ad-1 {
-    width: 500px;
-    height: 500px;
+.axeld-1 {
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: 250px;
 
@@ -223,6 +224,79 @@ body {
 
 }
 
+.artists-header {
+    min-height: 75vh;
+    display:flex;
+    align-items: center;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    flex-direction: column;
+}
+
+.artists-header-1 {
+    width: auto!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.artist-header-2 {
+    padding-bottom: 50px;
+}
+
+.artists-header-2 {
+    height: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    margin-top: 50px;
+}
+
+.artist-container {
+    width: 300px;
+    max-width: 32%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.artist-name-container {
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(150,150,150);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.artist-name {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.artist-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgb(70,70,70);
+    transition: 0.3s;
+}
+
+.artist-image:hover {
+    border: 1px solid rgb(255,255,255);
+    cursor: pointer;
+    transition: 0s;
+}
+
+.no-cursor {
+    cursor: default!important;
+}
+
 .about-me-title {
     padding-top: 20px;
 }
@@ -238,7 +312,7 @@ body {
     max-width: 30vw;
     height: auto;
     border-radius: 30px;
-
+    box-shadow: 0 0 50px rgb(70,70,70);
     object-fit: cover;
 }
 
@@ -275,7 +349,7 @@ body {
     position: absolute;
     top: 55%;
     right: 200px;
-    border: 2px solid #0166be;
+    border: 2px solid #01be3d;
     transition: 0.3s;
 }
 
@@ -285,6 +359,7 @@ body {
     z-index: 3;
     transition: 0.3s;
 }
+
 
 .asoif {
     color: #16e5f5;
@@ -361,7 +436,6 @@ body {
     width: 700px;
     max-width: 50vw;
     flex-wrap: wrap;
-    
 }
 
 .programming-section {
@@ -386,15 +460,17 @@ body {
     display: none;
     position: absolute;
     height: 95px;
-    top: -100px;
-    background: rgb(40, 40, 40);
-    border-radius: 10px;
-
+    top: -95px;
+    background: rgb(30, 30, 30);
+    border-radius: 10px 10px 0 0;
+    border-right: 1px solid rgb(255,255,255);
+    border-left: 1px solid rgb(255,255,255);
+    border-top: 1px solid rgb(255,255,255);
 }
 
 .framework-description {
     height: 125px;
-    top: -130px;
+    top: -125px;
 }
 
 .language-description-title {
@@ -416,8 +492,12 @@ body {
 
 .logo-image:hover {
     padding: 20px;
-    background: rgb(40,40,40);
-    transition: 0.3s;
+
+    border-right: 1px solid rgb(255,255,255);
+    border-left: 1px solid rgb(255,255,255);
+    border-bottom: 1px solid rgb(255,255,255);
+    border-radius: 0 0 10px 10px;
+    transition: 0s;
 }
 
 .python-title {
@@ -522,6 +602,50 @@ body {
 }
 
 
+#education {
+    margin-top: 0!important;
+    min-height: 0!important;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    min-height: 100vh!important;
+}
+
+.education-1 {
+    color: rgb(0,250,215);
+}
+
+.education-header-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.education-header-1 {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.education-img {
+    width: 850px;
+    max-width: 95%;
+    position: absolute;
+
+    border-radius: 20px;
+    object-fit: contain;
+    transition: 0.3s;
+    border: 2px solid #ffffff;
+    transition: 0.3s;
+    z-index: 1;
+    box-shadow: 0 0 100px rgb(70,70,70);
+}
+
+.education-img:hover {
+    transition: 0.3s;
+    width: 875px;
+    max-width: 97%;
+    z-index: 2;
+}
 
 .projects-intro-header {
     height: 70vh;
@@ -548,6 +672,7 @@ body {
     object-fit: cover;
     border-radius: 10px;
     transition: 0.3s;
+    box-shadow: 0 0 50px rgb(70,70,70);
 }
 
 
@@ -644,7 +769,7 @@ body {
 }
 
 .mr-image {
-
+    box-shadow: 0 0 50px rgb(70,70,70);
     border-radius: 20px;
     object-fit: contain;
 }
@@ -812,7 +937,7 @@ body {
         padding-left: 50px;
     }
 
-    .ad-1 {
+    .axeld-1 {
         width: 300px;
         height: 300px;
     }
@@ -846,7 +971,17 @@ body {
         padding-left: 0;
     }
 
+    .education-header-1 {
+        padding-right: 50px;
+        padding-left: 0;
+    }
+
     .projects-header-1 {
+        padding-left: 0;
+        padding-right: 50px;
+    }
+
+    .education-header-1 {
         padding-left: 0;
         padding-right: 50px;
     }
@@ -939,6 +1074,11 @@ body {
         width: 55%;
     }
 
+    .education-header-1 {
+        padding-bottom: 100px;
+        width: 55%;
+    }
+
     .mk-header-2 {
         padding: 50px 0;
         display: flex;
@@ -948,6 +1088,14 @@ body {
         width: 40%;
     }
 
+    .education-header-2 {
+        width: 50%;
+    }
+
+    .education-header-1 {
+        width: 45%;
+    }
+
     .logo-image {
         padding: 15px;
     }
@@ -955,6 +1103,10 @@ body {
 }
 
 @media all and (max-width: 905px) {
+
+    .artists-header-2 {
+        width: 95%;
+    }
 
     .title-container {
         padding-bottom: 50px;
@@ -1018,7 +1170,16 @@ body {
 
 @media all and (max-width: 700px) {
 
+    #education {
+        min-height: 0;
+    }
 
+    .mk-header-2 {
+        height:auto!important;
+        min-height: 500px;
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+    }
 
     .about-me-header {
         flex-direction: column;
@@ -1032,6 +1193,11 @@ body {
     }
 
     .projects-header-1 {
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .education-header-1 {
         padding: 0;
         padding-bottom: 20px;
     }
@@ -1149,7 +1315,7 @@ body {
         padding: 0!important;
     }
 
-    .ad-1 {
+    .axeld-1 {
         max-height: 100%;
         width: auto;
     }
@@ -1171,7 +1337,43 @@ body {
     }
 }
 
+@media all and (max-width: 620px) {
+    .artist-name-container {
+        font-size: 0.9rem!important;
+    }
+
+    .artist-name {
+        font-size: 1.1rem!important;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+
+    .artist-container {
+        height: 200px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .artist-name-container {
+        font-size: 0.8rem!important;
+    }
+
+    .artist-name {
+        font-size: 0.9rem!important;
+    }
+
+
+}
+
 @media all and (max-width: 440px) {
+
+    .artists-header, .about-me-header, .programming-header, .projects-header {
+        min-height: 0;
+    }
     
     .mr-header-2 {
         height: 500px;
