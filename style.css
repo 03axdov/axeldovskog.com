@@ -56,6 +56,7 @@ body {
     justify-content: center;
     padding: 0 50px;
     z-index: 3;
+
 }
 
 .nav-elements {
@@ -68,8 +69,8 @@ body {
 
 .nav-element {
     width: auto;
-    font-size: 1.2rem;
-    color: rgb(180,180,180);
+    font-size: 1.1rem;
+    color: rgb(225,225,225);
     text-decoration: none;
 }
 
@@ -87,13 +88,16 @@ body {
 
 }
 
-.ad-1 {
-    width: 500px;
-    height: 500px;
+.axeld-1 {
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: 250px;
+    box-shadow: 0 0 50px rgb(70, 70, 70);
+}
 
-    box-shadow: 0 0 100px rgb(70, 70, 70);
+.main-title {
+    font-size: 2.7rem!important;
 }
 
 .title-header-2 {
@@ -121,7 +125,7 @@ body {
     -webkit-text-fill-color: transparent;
     padding-bottom: 10px;
     border-bottom: 3px solid rgb(255, 255, 255);
-    border-image: linear-gradient(to right, rgba(233,177,255,1), rgba(118,146,255,1)) 1;
+
     margin-bottom: 20px;
     margin-left: 0;
     margin-right: auto;
@@ -134,14 +138,51 @@ body {
 
 
 .colored-text-title {
-    background: rgba(255,255,255,1);
-
-    background-repeat: no-repeat;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    animation: 
+        typing 4s steps(20, end),
+        blink-caret .75s step-end infinite;
 }
+
+@keyframes typing {
+    7%, 97% { content: ""; }
+    8%, 96% { content: "A"; }
+    9%, 95% { content: "Ax"; }
+    10%, 94% { content: "Axe"; }
+    11%, 93% { content: "Axel"; }
+    12%, 92% { content: "Axel D"; }
+    13%, 91% { content: "Axel Do"; }
+    14%, 90% { content: "Axel Dov"; }
+    15%, 89% { content: "Axel Dovs"; }
+    16%, 88% { content: "Axel Dovsk"; }
+    17%, 87% { content: "Axel Dovsko"; }
+    18%, 86% { content: "Axel Dovskog"; }
+
+}
+
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+.typewriter {
+    --caret: currentcolor;
+}
+  
+.typewriter::before {
+    content: "";
+    animation: typing 25s infinite;
+}
+  
+.typewriter::after {
+    content: "";
+    border-right: 1ch solid var(--caret);;
+    animation: blink 1s linear infinite;
+}
+  
+  
 
 .title-description {
     font-size: 1.2rem;
@@ -224,6 +265,79 @@ body {
 
 }
 
+.artists-header {
+    min-height: 75vh;
+    display:flex;
+    align-items: center;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    flex-direction: column;
+}
+
+.artists-header-1 {
+    width: auto!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.artist-header-2 {
+    padding-bottom: 50px;
+}
+
+.artists-header-2 {
+    height: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    margin-top: 50px;
+}
+
+.artist-container {
+    width: 300px;
+    max-width: 32%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.artist-name-container {
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(150,150,150);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.artist-name {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.artist-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgb(70,70,70);
+    transition: 0.3s;
+}
+
+.artist-image:hover {
+    border: 1px solid rgb(255,255,255);
+    cursor: pointer;
+    transition: 0s;
+}
+
+.no-cursor {
+    cursor: default!important;
+}
+
 .about-me-title {
     padding-top: 20px;
 }
@@ -276,7 +390,7 @@ body {
     position: absolute;
     top: 55%;
     right: 200px;
-    border: 2px solid #be9201;
+    border: 2px solid #01be3d;
     transition: 0.3s;
 }
 
@@ -286,6 +400,7 @@ body {
     z-index: 3;
     transition: 0.3s;
 }
+
 
 .asoif {
     color: #16e5f5;
@@ -530,6 +645,11 @@ body {
 
 #education {
     margin-top: 0!important;
+    min-height: 0!important;
+    padding: 0!important;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    min-height: 100vh!important;
 }
 
 .education-1 {
@@ -545,8 +665,10 @@ body {
 
 .education-header-1 {
     padding-top: 0!important;
-    padding-bottom: 0!important;
+    padding-right: 50px!important;
+    padding-bottom: 25px!important;
 }
+
 
 .education-img {
     width: 850px;
@@ -556,10 +678,10 @@ body {
     border-radius: 20px;
     object-fit: contain;
     transition: 0.3s;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     transition: 0.3s;
     z-index: 1;
-    box-shadow: 0 0 100px rgb(70,70,70);
+    box-shadow: 0 0 50px rgb(70,70,70);
 }
 
 .education-img:hover {
@@ -697,17 +819,17 @@ body {
 }
 
 .mr-logo {
-    width: 300px;
-    max-width: 17vw;
+    width: 475px;
+    max-width: 28vw;
     z-index: 1;
-    border: 2px solid rgb(119,0,255);
+    border: 2px solid rgb(236, 241, 144);
     transition: 0.3s;
 }
 
 .mr-logo:hover {
     transition: 0.3s;
-    width: 330px;
-    max-width: 19vw;
+    width: 500px;
+    max-width: 30vw;
 }
 
 .mr-img-1 {
@@ -737,6 +859,13 @@ body {
     border: 2px solid #b900b1;
     transition: 0.3s;
 }
+
+.fade-in-image { animation: fadeIn 3s; }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .mr-img-2:hover {
     transition: 0.3s;
@@ -851,7 +980,13 @@ body {
     margin-right: 10px;
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1300px) {
+    .main-title {
+        font-size: 2.3rem!important;
+    }
+}
+
+@media all and (max-width: 1220px) {
 
     .nav-elements {
         padding-right: 50px;
@@ -859,7 +994,7 @@ body {
         padding-left: 50px;
     }
 
-    .ad-1 {
+    .axeld-1 {
         width: 300px;
         height: 300px;
     }
@@ -867,6 +1002,8 @@ body {
     .title {
         font-size: 2.5rem;
     }
+
+
 
     .title-description, .programming-description {
         font-size: 1rem;
@@ -1026,6 +1163,14 @@ body {
 
 @media all and (max-width: 905px) {
 
+    .title-header-2 {
+        padding-bottom: 0!important;
+    }
+
+    .artists-header-2 {
+        width: 95%;
+    }
+
     .title-container {
         padding-bottom: 50px;
         margin-top: 50px;
@@ -1088,7 +1233,16 @@ body {
 
 @media all and (max-width: 700px) {
 
+    #education {
+        min-height: 0;
+    }
 
+    .mk-header-2 {
+        height:auto!important;
+        min-height: 500px;
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+    }
 
     .about-me-header {
         flex-direction: column;
@@ -1224,7 +1378,7 @@ body {
         padding: 0!important;
     }
 
-    .ad-1 {
+    .axeld-1 {
         max-height: 100%;
         width: auto;
     }
@@ -1246,13 +1400,43 @@ body {
     }
 }
 
+@media all and (max-width: 620px) {
+    .artist-name-container {
+        font-size: 0.9rem!important;
+    }
+
+    .artist-name {
+        font-size: 1.1rem!important;
+    }
+}
+
 @media all and (max-width: 600px) {
     .navbar {
         display: none;
     }
+
+    .artist-container {
+        height: 200px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .artist-name-container {
+        font-size: 0.8rem!important;
+    }
+
+    .artist-name {
+        font-size: 0.9rem!important;
+    }
+
+
 }
 
 @media all and (max-width: 440px) {
+
+    .artists-header, .about-me-header, .programming-header, .projects-header {
+        min-height: 0;
+    }
     
     .mr-header-2 {
         height: 500px;
