@@ -819,17 +819,17 @@ body {
 }
 
 .mr-logo {
-    width: 300px;
-    max-width: 17vw;
+    width: 475px;
+    max-width: 28vw;
     z-index: 1;
-    border: 2px solid rgb(119,0,255);
+    border: 2px solid rgb(236, 241, 144);
     transition: 0.3s;
 }
 
 .mr-logo:hover {
     transition: 0.3s;
-    width: 330px;
-    max-width: 19vw;
+    width: 500px;
+    max-width: 30vw;
 }
 
 .mr-img-1 {
