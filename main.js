@@ -128,3 +128,15 @@ function IBUA10() {
     desc = "The basics of International Business, such as regulations, management, entry modes, etc.";
     IBCourse(title, desc, "IBUA10");
 }
+
+function IBUA21() {
+    title = "International Business: International Marketing";
+    desc = "Covers the marketing mix, including promotion, price, distribution, and the product itself.";
+    IBCourse(title, desc, "IBUA21");
+}
+
+function IBUA61() {
+    title = "International Business: Financial Accounting";
+    desc = "Covers relatively in-depth accounting concepts.";
+    IBCourse(title, desc, "IBUA61");
+}

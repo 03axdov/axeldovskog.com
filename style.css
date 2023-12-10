@@ -89,11 +89,11 @@ body {
 }
 
 .axeld-1 {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     object-fit: cover;
-    border-radius: 250px;
-    box-shadow: 0 0 50px rgb(70, 70, 70);
+    border-radius: 300px;
+    box-shadow: 0 0 50px rgb(48, 91, 119);
 }
 
 .main-title {
@@ -952,17 +952,17 @@ body {
 }
 
 .mr-logo {
-    width: 475px;
-    max-width: 28vw;
+    width: 500px;
+    max-width: 30vw;
     z-index: 1;
-    border: 2px solid rgb(236, 241, 144);
+    border: 2px solid rgb(70, 160, 235);
     transition: 0.3s;
 }
 
 .mr-logo:hover {
     transition: 0.3s;
-    width: 500px;
-    max-width: 30vw;
+    width: 525px;
+    max-width: 32vw;
 }
 
 .mr-img-1 {
