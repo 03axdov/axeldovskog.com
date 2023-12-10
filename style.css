@@ -719,7 +719,7 @@ body {
     height: 400px;
     object-fit: cover;
     border-radius: 15px;
-    border: 1px solid white;
+    border: 2px solid rgb(90, 13, 153);
     box-shadow: 0 0 50px rgb(70,70,70);
 }
 
@@ -728,14 +728,16 @@ body {
 }
 
 .education-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    gap: 10px;
     width: 100%;
 }
+
 
 .courses-title {
     font-size: 2rem;
@@ -749,6 +751,8 @@ body {
 .course {
     background: rgb(25,25,25);
     border-radius: 10px;
+    width: calc(33% - 10px);
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -760,7 +764,7 @@ body {
 }
 
 .course-description {
-    height: 150px;
+    min-height: 200px;
     font-size: 1.1rem;
     padding: 20px;
     border-radius: 10px;
@@ -773,6 +777,7 @@ body {
     padding: 5px 50px;
     margin-bottom: 10px;
     border-bottom: 1px solid white;
+    text-align: center;
 }
 
 .course:hover {
@@ -1285,7 +1290,10 @@ body {
 
 @media all and (max-width: 905px) {
 
-
+    #education {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
     .title-header-2 {
         padding-bottom: 0!important;
