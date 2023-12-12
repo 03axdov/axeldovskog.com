@@ -684,9 +684,18 @@ body {
 
 }
 
-.education-1 {
-    color: rgb(0,250,215);
+#cs-title {
+    color: rgb(141, 42, 253);
 }
+
+.education-1 {
+    color: rgb(0, 204, 255)
+}
+
+.education-2 {
+    color: rgb(184, 97, 255)
+}
+
 
 .education-header-1 {
     width: 100%;
@@ -719,12 +728,13 @@ body {
     height: 400px;
     object-fit: cover;
     border-radius: 15px;
-    border: 2px solid rgb(90, 13, 153);
+    border: 2px solid rgb(255, 255, 255);
     box-shadow: 0 0 50px rgb(70,70,70);
 }
 
 .hp {
     color: rgb(150, 150, 150);
+    font-size: 1.2rem;
 }
 
 .education-grid {
@@ -746,6 +756,11 @@ body {
     text-align: center;
     margin-bottom: 40px;
     border-bottom: 1px solid white;
+    color: rgb(0, 212, 250);
+}
+
+.courses-title-cs {
+    color: rgb(118, 146, 255);
 }
 
 .course {
@@ -778,6 +793,7 @@ body {
     margin-bottom: 10px;
     border-bottom: 1px solid white;
     text-align: center;
+    color: rgb(0, 150, 250);
 }
 
 .course:hover {
