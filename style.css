@@ -307,8 +307,8 @@ body {
 
 
 .scroller {
-    width: 70%;
-    max-width: 70%;
+    width: 1300px;
+    max-width: 90%;
     height: auto;
     display: flex;
     overflow: hidden;
@@ -728,8 +728,12 @@ body {
     height: 400px;
     object-fit: cover;
     border-radius: 15px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid #F6E7D2;
     box-shadow: 0 0 50px rgb(70,70,70);
+}
+
+.cs-img {
+    border: 2px solid #1DAAD8;
 }
 
 .hp {
@@ -1240,6 +1244,14 @@ body {
         width: 40%;
     }
 
+    .work-header-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+
     .mr-logo {
         display: none;
     }
@@ -1619,4 +1631,91 @@ body {
     .logo-image:hover {
         padding: 15px;
     }
+}
+
+#work {
+    padding-left: 0;
+    background: rgb(20,20,20);
+    padding-bottom: 50px;
+}
+
+.job-info {
+    color: rgb(180,180,180);
+    font-size: 1.2rem;
+}
+
+.job-title {
+    color: rgb(0, 212, 250);
+    font-size: 1.2rem;
+}
+
+.arm-title {
+    background: rgb(0, 212, 250);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.arm-header-1 {
+    justify-content: start;
+    width: 50%;
+    padding-left: 120px;
+    padding-right: 50px;
+    padding-top: 100px;
+}
+
+.job-description {
+    font-size: 1.2rem;
+}
+
+.work-header {
+    margin-top: 0px;
+    padding: 0;
+}
+
+.work-header-2 {
+    justify-content: center;
+}
+
+.arm-logo {
+    width: 700px;
+    max-width: 38vw;
+    position: relative;
+
+    transition: 0.3s;
+    border: 2px solid #abd2d4;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+
+.arm-logo:hover {
+    transition: 0.3s;
+    width: 800px;
+    max-width: 40vw;
+    z-index: 2;
+}
+
+.arm-1 {
+    width: 500px;
+    max-width: 30vw;
+    z-index: 1;
+    border: 2px solid rgb(6, 89, 184);
+    transition: 0.3s;
+}
+
+.arm-1:hover {
+    transition: 0.3s;
+    width: 525px;
+    max-width: 32vw;
+    z-index: 2;
+}
+
+.work-header-2 {
+    padding: 0;
+}
+
+.jb-title {
+    color: white;
 }
