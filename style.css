@@ -1133,6 +1133,94 @@ body {
     margin-right: 10px;
 }
 
+
+#work {
+    padding-left: 0;
+    background: rgb(20,20,20);
+    padding-bottom: 50px;
+}
+
+.job-info {
+    color: rgb(180,180,180);
+    font-size: 1.2rem;
+}
+
+.job-title {
+    color: rgb(0, 212, 250);
+    font-size: 1.2rem;
+}
+
+.arm-title {
+    background: rgb(0, 212, 250);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.arm-header-1 {
+    justify-content: start;
+    width: 50%;
+    padding-left: 120px;
+    padding-right: 50px;
+    padding-top: 100px;
+}
+
+.job-description {
+    font-size: 1.2rem;
+}
+
+.work-header {
+    margin-top: 0px;
+    padding: 0;
+}
+
+.work-header-2 {
+    justify-content: center;
+}
+
+.arm-logo {
+    width: 700px;
+    max-width: 38vw;
+    position: relative;
+
+    transition: 0.3s;
+    border: 2px solid #abd2d4;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+
+.arm-logo:hover {
+    transition: 0.3s;
+    width: 800px;
+    max-width: 40vw;
+    z-index: 2;
+}
+
+.arm-1 {
+    width: 500px;
+    max-width: 30vw;
+    z-index: 1;
+    border: 2px solid rgb(6, 89, 184);
+    transition: 0.3s;
+}
+
+.arm-1:hover {
+    transition: 0.3s;
+    width: 525px;
+    max-width: 32vw;
+    z-index: 2;
+}
+
+.work-header-2 {
+    padding: 0;
+}
+
+.jb-title {
+    color: white;
+}
+
 @media all and (max-width: 1300px) {
     .main-title {
         font-size: 2.3rem!important;
@@ -1314,6 +1402,22 @@ body {
         width: 90%;
         max-width: 90%;
     }
+
+    .work-header {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px!important;
+    }
+
+    .arm-header-1, .arm-header-2 {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .work-header-2 {
+        height: auto!important;
+    }
+    
 }
 
 @media all and (max-width: 905px) {
@@ -1555,9 +1659,13 @@ body {
     #projects {
         padding-top: 50px;
     }
-}
 
-@media all and (max-width: 620px) {
+    .artist-container {
+        width: 200px;
+        height: 300px;
+        min-width: 200px;
+    }
+
     .artist-name-container {
         font-size: 0.9rem!important;
     }
@@ -1572,9 +1680,6 @@ body {
         display: none;
     }
 
-    .artist-container {
-        height: 200px;
-    }
 }
 
 @media all and (max-width: 450px) {
@@ -1631,91 +1736,4 @@ body {
     .logo-image:hover {
         padding: 15px;
     }
-}
-
-#work {
-    padding-left: 0;
-    background: rgb(20,20,20);
-    padding-bottom: 50px;
-}
-
-.job-info {
-    color: rgb(180,180,180);
-    font-size: 1.2rem;
-}
-
-.job-title {
-    color: rgb(0, 212, 250);
-    font-size: 1.2rem;
-}
-
-.arm-title {
-    background: rgb(0, 212, 250);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-
-.arm-header-1 {
-    justify-content: start;
-    width: 50%;
-    padding-left: 120px;
-    padding-right: 50px;
-    padding-top: 100px;
-}
-
-.job-description {
-    font-size: 1.2rem;
-}
-
-.work-header {
-    margin-top: 0px;
-    padding: 0;
-}
-
-.work-header-2 {
-    justify-content: center;
-}
-
-.arm-logo {
-    width: 700px;
-    max-width: 38vw;
-    position: relative;
-
-    transition: 0.3s;
-    border: 2px solid #abd2d4;
-    transition: 0.3s;
-    z-index: 1;
-}
-
-
-.arm-logo:hover {
-    transition: 0.3s;
-    width: 800px;
-    max-width: 40vw;
-    z-index: 2;
-}
-
-.arm-1 {
-    width: 500px;
-    max-width: 30vw;
-    z-index: 1;
-    border: 2px solid rgb(6, 89, 184);
-    transition: 0.3s;
-}
-
-.arm-1:hover {
-    transition: 0.3s;
-    width: 525px;
-    max-width: 32vw;
-    z-index: 2;
-}
-
-.work-header-2 {
-    padding: 0;
-}
-
-.jb-title {
-    color: white;
 }
