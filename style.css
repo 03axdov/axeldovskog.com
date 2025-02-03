@@ -1182,7 +1182,7 @@ body {
 .arm-logo {
     width: 700px;
     max-width: 38vw;
-    position: relative;
+    position: absolute;
 
     transition: 0.3s;
     border: 2px solid #abd2d4;
@@ -1200,6 +1200,9 @@ body {
 
 .arm-1 {
     width: 500px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
     max-width: 30vw;
     z-index: 1;
     border: 2px solid rgb(6, 89, 184);
@@ -1219,6 +1222,47 @@ body {
 
 .jb-title {
     color: white;
+}
+
+.dalinar-title {
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(0,116,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.dalinar-link {
+    color: rgb(0,212,255);
+}
+
+.dalinar-1 {
+    color: rgb(0,212,255);
+}
+.dalinar-2 {
+    color: #00acff;
+}
+.dalinar-3 {
+    color: #0086ff;
+}
+.dalinar-4 {
+    color: #005fff;
+}
+.dalinar-5 {
+    color: #0059ff;
+}
+.dalinar-6 {
+    color: #2f00ff;
+}
+
+.dalinar-img-1, .dalinar-img-2 {
+    border: 2px solid rgb(50,50,50)!important;
+    border-radius: 3px!important;
+}
+
+.dalinar-img-2 {
+    top: 350px;
 }
 
 @media all and (max-width: 1300px) {
